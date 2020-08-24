@@ -4,35 +4,57 @@
     <meta charset="UTF-8">
     <title>Game</title>
     <script type="text/javascript" src="game.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="game.css">
 </head>
 <body onload="startGame()">
-<h2>Controls</h2>
-<p>You can also use the arrows on your keyboard!</p>
-<div>
-    <table>
-        <tr>
-            <td></td>
-            <td class="text-center"><button onmousedown="moveUp()" onmouseup="stopMove()">Up</button></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="text-center"><button onmousedown="moveLeft()" onmouseup="stopMove()">Left</button></td>
-            <td></td>
-            <td class="text-center"><button onmousedown="moveRight()" onmouseup="stopMove()">Right</button></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td class="text-center"><button onmousedown="moveDown()" onmouseup="stopMove()">Down</button></td>
-            <td></td>
-        </tr>
-    </table>
-</div>
-<h2>Stats</h2>
-<div>
-    Last score:<p id="last score"></p>
-    Current top score:<p id="top score"></p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 m-3 p-3" id="canvas-div">
+            <!-- Game canvas goes here -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="card col-md-6 m-4 p-4">
+        <h2 class="mx-auto">Controls</h2>
+        <p>You can also use the arrows on your keyboard!</p>
+        <div class="mx-auto m-3">
+            <table>
+                <tr>
+                    <td></td>
+                    <td class="text-center">
+                        <button onmousedown="moveUp()" onmouseup="stopMove()">Up</button>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <button onmousedown="moveLeft()" onmouseup="stopMove()">Left</button>
+                    </td>
+                    <td></td>
+                    <td class="text-center">
+                        <button onmousedown="moveRight()" onmouseup="stopMove()">Right</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="text-center">
+                        <button onmousedown="moveDown()" onmouseup="stopMove()">Down</button>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+<!--        </div>-->
+<!--        <div class="card col-md-6">-->
+        <h2 class="mx-auto">Stats</h2>
+        <div class="m-3">
+            Last score:<p id="last score"></p>
+            Current top score:<p id="top score"></p>
+        </div>
+    </div>
+    </div>
 </div>
 </body>
 </html>

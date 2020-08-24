@@ -27,6 +27,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -39,7 +40,7 @@
       <workItem from="1597169517784" duration="12777000" />
       <workItem from="1597431943655" duration="759000" />
       <workItem from="1598290510374" duration="96000" />
-      <workItem from="1598291346049" duration="2566000" />
+      <workItem from="1598291346049" duration="5941000" />
     </task>
     <servers />
   </component>

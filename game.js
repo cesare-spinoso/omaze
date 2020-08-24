@@ -3,20 +3,7 @@ var myObstacle = [] // for multiple obstables
 var myScore
 
 function startGame() {
-")
-        // For multiple obstacles
-        this.frameNo = 0
-        // at every 20 ms update frame
-        this.interval = setInterval(updateGameArea, 20)
-        window.addEventListener('keydown', function (e) {
-            myGameArea.keyDown = e.key
-        })
-        window.addEventListener('keyup', function (e) {
-            myGameArea.keyDown = false
-            stopMove()
-        })
-    },
-    clear: f    myGamePiece = new component(30, 30, "blue", 10, 120)
+    myGamePiece = new component(30, 30, "blue", 10, 120)
     // Add a text type because handled differently from rect
     myScore = new component("15px", "Consolas", "black", 360, 40, "text")
     myGameArea.start()
@@ -29,9 +16,22 @@ var myGameArea = {
         this.canvas.height = 270
         // getContext() is a built-in HTML object, with properties and methods for drawing
         this.context = this.canvas.getContext("2d")
-        // insert canvas before anything in the html body
-        document.body.insertBefore(this.canvas, document.body.childNodes[0])
-        this.canvas.setAttribute("class","text-centerunction () {
+        // insert canvas between a div for centering and bootstrap
+        let divElement = document.getElementById("canvas-div")
+        divElement.appendChild(this.canvas)
+        // For multiple obstacles
+        this.frameNo = 0
+        // at every 20 ms update frame
+        this.interval = setInterval(updateGameArea, 20)
+        window.addEventListener('keydown', function (e) {
+            myGameArea.keyDown = e.key
+        })
+        window.addEventListener('keyup', function (e) {
+            myGameArea.keyDown = false
+            stopMove()
+        })
+    },
+    clear: function () {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height)
     },
     stop: function () {
